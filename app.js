@@ -180,6 +180,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         for(let i=0;i<squares.length;i++){
             if(squares[i].innerHTML == 16 ){
                 resultDisplay.innerHTML = 'You win!'
+                resultDisplay.className = 'win'
                 document.removeEventListener('keyup',control)
             }
         }
@@ -194,8 +195,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
         if(zeros == 0){
             resultDisplay.innerHTML = 'You Lose!'
+            resultDisplay.className = 'lose'
             document.removeEventListener('keyup',control)
             scoreDisplay.innerHTML = 0
         }
     }
+    document.getElementById("restart-button").addEventListener('click', () => {
+        scoreDisplay.innerHTML = 0
+        for(let i=0;i < width*width;i++){
+            squares[i].innerHTML = 0
+        }
+        generate()
+        generate()
+        console.log('clicked')
+    })
 })

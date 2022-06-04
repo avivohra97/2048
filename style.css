@@ -1,17 +1,116 @@
-.grid{
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
-    background-color: burlywood
-    ;
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  background-color: #e63946;
+  border-radius: 3px;
+  position: absolute;
+  margin: 10%;
+  margin-left: 25%;
+  margin-top: 3%;
 }
 
-.grid div{
-    width: 100px;
-    height: 100px;
-    background-color: brown;
-    font-size: 60px;
-    text-align: center;
-    font-weight: bold;
+.grid div {
+  width: 90px;
+  height: 90px;
+  justify-content: center;
+  background-color: #a8dadc;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 1px;
+  margin: 1%;
+}
+
+body {
+  margin: 5%;
+  margin-top: 5%;
+  position: center;
+  height: 100%;
+}
+
+html,
+body {
+  padding: 10;
+  background: #f1faee;
+  color: #354b59;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 18px;
+}
+
+.score-container {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  cursor: default;
+  border-radius: 6px;
+  width: 100%;
+  background: #e63946;
+  color: #f1faee;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}
+
+.game-container {
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  right: 0px;
+  text-align: center;
+  padding: 15px;
+  cursor: default;
+  border-radius: 6px;
+  width: 20%;
+  background: #e63946;
+  color: #f1faee;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}
+#restart-button{
+    color:inherit;
+    text-decoration:none;
+}
+.filled-text {
+  color: #d0d0d0;
+
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  cursor: default;
+  border-radius: 6px;
+  width: 100%;
+
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}
+
+#result.win {
+  color: #d0d0d0;
+
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  cursor: default;
+  border-radius: 6px;
+  width: 100%;
+  font-size: large;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  color: #a8dadc;
+  background-color: #354b59;
+}
+
+.filled-text.lose {
+  color: #e63946;
 }
